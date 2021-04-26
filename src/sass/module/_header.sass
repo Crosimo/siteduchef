@@ -1,0 +1,126 @@
+header
+    background-color: black
+    height: 35rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    nav
+        width: 100%
+        display: flex
+        justify-content: space-between
+        z-index: 5
+        
+        ul
+            display: flex
+            list-style: none
+            color: white
+            width: 40%
+            padding: 0
+            
+            border-top: 1px white solid
+            border-bottom: 1px white solid
+            mar
+            justify-content: space-evenly
+            align-items: center
+            
+            
+            li
+                height: 100%
+                width: 7rem
+                display: flex
+                align-items: center
+                justify-content: center
+            li:hover
+                background-color: $red
+        img
+            width: 5rem
+
+    .divhdr1
+        height: 70%
+        
+        
+        .divhdr2
+            display: flex
+            
+            
+            
+            button
+                border-radius: 50%
+                padding: 0.2rem
+                margin: 0.4rem
+                // border: white 1px solid
+                // box-shadow: 2px 2px 2px 18px grey inset
+
+                // Maybe use after or before ?
+
+        .divhdr3
+            .divhdr4
+                height: 18rem
+                color: white
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                text-align: center
+               
+                p
+                    width: 25.5%
+                    font-size: 2.4rem
+                    font-family: 'Courgette', cursive
+                    .lespan
+                        color: $red
+                button
+                    border-radius: 2.1rem
+                    padding: 0.3rem
+                    padding-right:0.75rem
+                    padding-left: 0.75rem
+                    border: none
+                    
+                button:last-of-type
+                    background-color: $red     
+                    color: white           
+            
+                
+
+    //     display: flex
+    //     justify-content: center
+    //     flex-direction: column
+    //     align-items: center
+    //     p
+    //         color: white
+    //     .divhdr2
+    //         button
+                
+@media (max-width: 639px)
+    html
+        font-size: 10px
+        header
+            nav
+                ul
+                    flex-direction: column
+                img
+
+        .divhdr1
+            .divhdr3
+                .divhdr4
+                    p 
+                        width: 100%
+    // header
+    //     p
+    //         font-size: 0.1rem
+    
+@media (min-width: 640px) and (max-width: 1040px)
+     html
+        font-size: 15px
+        header
+            nav
+                ul
+                    flex-direction: column
+                img
+
+        .divhdr1
+            .divhdr3
+                .divhdr4
+                    p 
+                        width: 100%
