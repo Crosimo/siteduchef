@@ -1,4 +1,48 @@
 .section2
+    background-color: #0d0a08
+    height: 40rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100%
     .titre2
+        text-align: center
+        height: 25%
         h1
+            font-family: $font
+            color: white
             span
+                color: $red
+        img
+            width: 40%
+            opacity: 90%
+    .lesChefs
+        display: flex
+        justify-content: space-around
+        width: 100%
+        height: 60%
+        div
+            text-align: center
+            img
+                width: 100%
+            p
+                color: white
+
+@media (max-width: 640px)
+    
+    .section2
+        height: 145rem
+        .titre2
+            height: 10%
+        .lesChefs
+            flex-direction: column
+            justify-content: space-around
+            height: 80%
+            width: 100%
+            div
+                img
+                    width: 35%
+   
+        
+        
