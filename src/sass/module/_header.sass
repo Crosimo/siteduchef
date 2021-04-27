@@ -4,11 +4,11 @@ header
     
     background-position-y: 45%
     background-position-x: 10%
-    height: 35rem
+    height: 40rem
     display: flex
     flex-direction: column
     align-items: center
-    justify-content: space-around
+    justify-content: flex-end
     position: relative
     .footerbg
       background-image: url(../images/footer_bottom_decoration_img.png)
@@ -22,6 +22,9 @@ header
         display: flex
         justify-content: space-between
         z-index: 5
+        position: fixed
+        top: 2rem
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15) )
         
         ul
             display: flex
@@ -49,7 +52,7 @@ header
             width: 5rem
 
     .divhdr1
-        height: 70%
+        height: 60%
         
         
         .divhdr2
@@ -57,10 +60,27 @@ header
             
             
             
-            button
+            li
                 border-radius: 50%
-                padding: 0.2rem
+                width: 1rem
+                padding-top: 0.4rem
+                padding-bottom: 0.4rem
                 margin: 0.4rem
+                box-shadow: rgb(0,0 ,0,0.5 )
+                position: relative
+            li:hover::before
+                content: ''
+                position: absolute
+                top: -5px
+                left: -5px
+                right: -5px
+                bottom: -5px
+                border: white 2px solid
+                border-radius: 50%
+                width: 1.6rem
+                padding-right:0.5rem
+                padding-left: 0.4rem
+
                 // border: white 1px solid
                 // box-shadow: 2px 2px 2px 18px grey inset
 
@@ -77,7 +97,7 @@ header
                 text-align: center
                
                 p
-                    width: 30%
+                    width: 50%
                     font-size: 2.4rem
                     font-family: $font
                     .lespan

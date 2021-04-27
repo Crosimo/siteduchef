@@ -16056,11 +16056,11 @@ header {
   background-size: cover;
   background-position-y: 45%;
   background-position-x: 10%;
-  height: 35rem;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
   position: relative;
 }
 header .footerbg {
@@ -16076,6 +16076,9 @@ header nav {
   display: flex;
   justify-content: space-between;
   z-index: 5;
+  position: fixed;
+  top: 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));
 }
 header nav ul {
   display: flex;
@@ -16102,15 +16105,32 @@ header nav img {
   width: 5rem;
 }
 header .divhdr1 {
-  height: 70%;
+  height: 60%;
 }
 header .divhdr1 .divhdr2 {
   display: flex;
 }
-header .divhdr1 .divhdr2 button {
+header .divhdr1 .divhdr2 li {
   border-radius: 50%;
-  padding: 0.2rem;
+  width: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
   margin: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+header .divhdr1 .divhdr2 li:hover::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: white 2px solid;
+  border-radius: 50%;
+  width: 1.6rem;
+  padding-right: 0.5rem;
+  padding-left: 0.4rem;
 }
 header .divhdr1 .divhdr3 .divhdr4 {
   height: 18rem;
@@ -16122,7 +16142,7 @@ header .divhdr1 .divhdr3 .divhdr4 {
   text-align: center;
 }
 header .divhdr1 .divhdr3 .divhdr4 p {
-  width: 30%;
+  width: 50%;
   font-size: 2.4rem;
   font-family: "Courgette", cursive;
 }
@@ -16163,10 +16183,6 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
     width: 100%;
   }
 }
-#hidden {
-  display: none;
-}
-
 .section1 {
   background-image: url(../images/main_bg.jpg);
 }
@@ -16236,6 +16252,37 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
 .section1 .menu .ourMenuList .ourMenu {
   display: flex;
 }
+.section1 .menu .ourMenuList .ourMenu .elements {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: no-wrap;
+  flex-direction: column;
+}
+.section1 .menu .ourMenuList .ourMenu .elements a {
+  height: 5rem;
+  font-size: 3rem;
+  border: none;
+  width: 100%;
+  color: #efefef;
+}
+.section1 .menu .ourMenuList .ourMenu .elements a:active {
+  color: #b0293a;
+  border-right: #b0293a 0.3rem solid;
+}
+.section1 .menu .ourMenuList .ourMenu .elements a:active i {
+  color: #b0293a;
+}
+.section1 .menu .ourMenuList .ourMenu .display {
+  position: relative;
+}
+.section1 .menu .ourMenuList .ourMenu .display .flex {
+  display: flex;
+}
+.section1 .menu .ourMenuList .ourMenu .display .abso {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+}
 .section1 .menu .ourMenuList .ourMenu .divuno div {
   width: 100%;
   border-right: 1px solid grey;
@@ -16289,83 +16336,6 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   font-size: 0.95rem;
 }
 .section1 .menu .ourMenuList .ourMenu .divduo div p:last-of-type {
-  background-color: #efefef;
-  padding-right: 0.4rem;
-  padding-left: 0.4rem;
-  color: #b0293a;
-  font-weight: bold;
-}
-.section1 .menu #hidden {
-  display: none;
-}
-.section1 .menu .ourMenuList2 {
-  position: absolute;
-  top: 13%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-}
-.section1 .menu .ourMenuList2 h1 {
-  font-family: "Courgette", cursive;
-  margin: 0;
-}
-.section1 .menu .ourMenuList2 h1 span {
-  color: #b0293a;
-}
-.section1 .menu .ourMenuList2 img {
-  width: 15rem;
-  margin-bottom: 1rem;
-}
-.section1 .menu .ourMenuList2 .ourMenu {
-  display: flex;
-}
-.section1 .menu .ourMenuList2 .ourMenu .divuno div {
-  width: 100%;
-  border-right: 1px solid grey;
-  border-bottom: 1px solid grey;
-  width: 100%;
-  height: 7rem;
-  padding: 1rem;
-  text-align: center;
-}
-.section1 .menu .ourMenuList2 .ourMenu .divuno div i {
-  font-size: 3.5rem;
-  color: #efefef;
-}
-.section1 .menu .ourMenuList2 .ourMenu .divuno div p {
-  font-family: "Courgette", cursive;
-  font-size: 1.2rem;
-}
-.section1 .menu .ourMenuList2 .ourMenu .divuno div:active {
-  border-right: 0.4rem solid #b0293a;
-}
-.section1 .menu .ourMenuList2 .ourMenu .divuno div:active i {
-  color: #b0293a;
-}
-.section1 .menu .ourMenuList2 .ourMenu .divduo {
-  margin-top: 2rem;
-}
-.section1 .menu .ourMenuList2 .ourMenu .divduo div {
-  display: flex;
-  height: 14rem;
-  margin: 1rem;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  border-bottom: 0.05rem solid #efefef;
-}
-.section1 .menu .ourMenuList2 .ourMenu .divduo div img {
-  border-radius: 50%;
-  border: 0.3rem #efefef solid;
-}
-.section1 .menu .ourMenuList2 .ourMenu .divduo div p:first-of-type {
-  text-align: start;
-  width: 52%;
-  margin-left: 0.5rem;
-  font-size: 0.95rem;
-}
-.section1 .menu .ourMenuList2 .ourMenu .divduo div p:last-of-type {
   background-color: #efefef;
   padding-right: 0.4rem;
   padding-left: 0.4rem;
