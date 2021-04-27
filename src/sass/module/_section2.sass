@@ -24,10 +24,51 @@
         height: 60%
         div
             text-align: center
+            position: relative
             img
                 width: 100%
+                
             p
                 color: white
+        .dropdown-content
+            display: none
+            position: absolute
+            background-color: #f9f9f9
+            min-width: 160px
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+            padding: 12px 16px
+            z-index: 1
+        .dropdown:hover
+            .dropdown-content
+                display: block
+                border: none
+                background-color: $grey
+                height: 10rem
+                position: relative
+                top:-27rem
+                left: -10rem
+                border-radius: 50%
+                p
+                    position: absolute
+                    top: 4rem
+                    right: 0.5rem
+                    z-index: 4
+                    color: black
+                    
+                .triangle
+                        width: 0
+                        height: 0
+                        border-left: 50px solid transparent
+                        border-right: 50px solid transparent
+                        border-bottom: 100px solid $grey
+                        position: absolute
+                        bottom:  0rem
+                        
+                        right: 0.25rem
+                   
+                    
+
+
 
 @media (max-width: 640px)
     

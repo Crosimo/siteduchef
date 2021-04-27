@@ -1,7 +1,12 @@
 
 .section1
     background-image: url(../images/main_bg.jpg)
+    height: 110rem
+    display: flex
+    align-items: center
+    justify-content: center
     .menu
+        
         display: flex
         flex-direction: column
         align-items: center
@@ -70,6 +75,8 @@
                         border: none
                         width: 100%
                         color: $grey
+                        border-right: 1px solid $grey
+                        border-bottom: 1px solid $grey
                     a:active
                         color: $red
                         border-right: $red 0.3rem solid
@@ -80,12 +87,17 @@
                     position: relative
                     .flex
                         display: flex
+                        
                     .abso
                         position: absolute
                         z-index: 5
                         top: 0
 
                
+
+
+
+
                 .divuno
                     
                     div
@@ -145,7 +157,84 @@
         
 
 
+@media   (min-width: 1040px) and ( max-width:1240px )
+    .section1
+        height: 205rem
+        .menu
 
+            .ourMenuList
+                .ourMenu
+
+                    .divduo
+                        div
+                            flex-direction: column
+                            height: 28rem
+                            justify-content: space-evenly
+                            img
+                                width: 60%
+                            p:first-of-type
+                                font-size: 1.2rem
+                                text-align: center
+                            p:last-of-type
+                                font-size: 1.5rem
+
+
+@media (min-width: 640px) and (max-width: 1239px)
+
+    .section1
+        height: 205rem
+        .menu
+            height: 185rem
+            justify-content: space-evenly
+            .ourMenuList
+                height: 80%
+                .ourMenu
+                    height: 100%
+                    .divuno
+                        height: 25%
+                    .divduo
+                        height: 70%
+                        div
+                            flex-direction: column
+                            height: 28rem
+                            justify-content: space-evenly
+                            img
+                                width: 60%
+                            p:first-of-type
+                                font-size: 1.2rem
+                                text-align: center
+                                width: 100%
+                            p:last-of-type
+                                font-size: 1.5rem
+
+
+@media (max-width: 639px)
+
+     .section1
+        height: 205rem
+        .menu
+            height: 195rem
+            justify-content: space-evenly
+            .ourMenuList
+                height: 75%
+                .ourMenu
+                    height: 100%
+                    .divuno
+                        height: 25%
+                    .divduo
+                        height: 70%
+                        div
+                            flex-direction: column
+                            height: 28rem
+                            justify-content: space-evenly
+                            img
+                                width: 70%
+                            p:first-of-type
+                                font-size: 1.2rem
+                                text-align: center
+                                width: 100%
+                            p:last-of-type
+                                font-size: 1.5rem
 
         // deuxième section
 

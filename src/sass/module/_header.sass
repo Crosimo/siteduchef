@@ -21,7 +21,7 @@ header
         width: 100%
         display: flex
         justify-content: space-between
-        z-index: 5
+        z-index: 8
         position: fixed
         top: 2rem
         background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15) )
@@ -32,7 +32,7 @@ header
             color: white
             width: 40%
             padding: 0
-            
+            margin: 0
             border-top: 1px white solid
             border-bottom: 1px white solid
             
@@ -53,6 +53,7 @@ header
 
     .divhdr1
         height: 60%
+        
         
         
         .divhdr2
@@ -87,6 +88,8 @@ header
                 // Maybe use after or before ?
 
         .divhdr3
+            display: flex
+            
             .divhdr4
                 height: 18rem
                 color: white
@@ -95,9 +98,10 @@ header
                 justify-content: center
                 flex-direction: column
                 text-align: center
+                width: 100%
                
                 p
-                    width: 50%
+                    width: 30rem
                     font-size: 2.4rem
                     font-family: $font
                     .lespan
