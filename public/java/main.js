@@ -6,8 +6,8 @@ const btn4 = document.querySelector('.button4')
 
 
 btn1.addEventListener('click', function () {
-    document.querySelectorAll('.button').classList.add('hidden');
-    document.querySelector('.button1').classList.remove('hidden');
+    btn1.classList.add('hidden');
+    btn2.classList.remove('hidden');
 })
 btn2.addEventListener('click', function () {
     document.querySelector('.button1').classList.add('hidden');

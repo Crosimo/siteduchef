@@ -1,0 +1,104 @@
+.section4
+    background-image: url(../images/testimonials_background.jpg)
+    background-size: cover
+    background-position: 100% 50%
+    height: 30rem
+    display: flex
+    align-items: center
+    .testimonials
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 100%
+        .titre2
+            margin-bottom: 3.5rem
+            margin-top: 2rem
+            text-align: center
+            h1
+                color: white
+                font-family: $font
+                margin: 0
+                span
+                    color: $red
+            
+        .jure1
+            display: flex
+            justify-content: space-evenly
+            .jure2
+                width: 45%
+                display: flex
+                justify-content: space-between
+                img
+                    border-radius: 50%
+                    width: 32%
+                    border: 0.3rem $grey solid
+                .jure3
+                    height: 92%
+                    border:  0.01rem $grey solid
+                    border-radius: 0.4rem
+                    width: 65%
+                    
+                    h3
+                        color: white
+
+                    span
+                        color: $red
+                    p
+                        color: white
+            .jure2:last-of-type
+                flex-direction: row-reverse
+
+@media (min-width: 500px) and (max-width: 1040px)
+    .section4
+        height: 45rem
+        .testimonials
+            height: 85%
+            .jure1
+                flex-direction: column    
+                align-items: center     
+                height: 75%
+                .jure2
+                    width: 70%
+                    img
+                        width: 33%           
+@media (min-width:376px) and (max-width: 499px )
+     .section4
+        height: 55rem
+        margin-top: 15rem
+        .testimonials
+            height: 85%
+            .titre2
+                height: 10%
+            .jure1
+                flex-direction: column    
+                align-items: center     
+                height: 75%
+                .jure2
+                    width: 70%
+                    img
+                        width: 8.4rem 
+@media ( max-width: 375px )
+     .section4
+        height: 55rem
+        margin-top: 15rem
+        .testimonials
+            height: 85%
+            .titre2
+                height: 10%
+            .jure1
+                flex-direction: column    
+                align-items: center     
+                height: 75%
+                .jure2
+                    width: 70%
+                    img
+                        height: 60%
+                        width: 40% 
+                    .jure3
+                        width: 50%
+    
+    
+     
+                    
+    

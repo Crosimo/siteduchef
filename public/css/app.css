@@ -16136,9 +16136,9 @@ header .divhdr1 .divhdr3 .divhdr4 button {
   padding-left: 0.75rem;
   border: none;
 }
-header .divhdr1 .divhdr3 .divhdr4 button:last-of-type {
+header .divhdr1 .divhdr3 .divhdr4 button:hover {
   background-color: #b0293a;
-  color: white;
+  border: #b0293a 0.002rem solid;
 }
 
 @media (max-width: 639px) {
@@ -16163,6 +16163,10 @@ header .divhdr1 .divhdr3 .divhdr4 button:last-of-type {
     width: 100%;
   }
 }
+#hidden {
+  display: none;
+}
+
 .section1 {
   background-image: url(../images/main_bg.jpg);
 }
@@ -16227,7 +16231,6 @@ header .divhdr1 .divhdr3 .divhdr4 button:last-of-type {
   color: #b0293a;
 }
 .section1 .menu .ourMenuList img {
-  width: 15rem;
   margin-bottom: 1rem;
 }
 .section1 .menu .ourMenuList .ourMenu {
@@ -16647,11 +16650,358 @@ header .divhdr1 .divhdr3 .divhdr4 button:last-of-type {
     margin-top: 10rem;
   }
   .section3 .contact {
-    height: 100rem;
+    height: 110rem;
   }
   .section3 .contact .elem1 {
     flex-direction: column;
+    height: 50rem;
   }
+  .section3 .contact .elem1 .elem2 {
+    height: 80%;
+  }
+  .section3 .contact .elem1 .elem2 .textImg p {
+    position: relative;
+    bottom: 1.5rem;
+  }
+  .section3 .contact .elem1 .elem2 div:last-of-type {
+    width: 100%;
+  }
+  .section3 .contact .elem1 .elem2 div:last-of-type p {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+.section4 {
+  background-image: url(../images/testimonials_background.jpg);
+  background-size: cover;
+  background-position: 100% 50%;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+}
+.section4 .testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.section4 .testimonials .titre2 {
+  margin-bottom: 3.5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.section4 .testimonials .titre2 h1 {
+  color: white;
+  font-family: "Courgette", cursive;
+  margin: 0;
+}
+.section4 .testimonials .titre2 h1 span {
+  color: #b0293a;
+}
+.section4 .testimonials .jure1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section4 .testimonials .jure1 .jure2 {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+.section4 .testimonials .jure1 .jure2 img {
+  border-radius: 50%;
+  width: 32%;
+  border: 0.3rem #efefef solid;
+}
+.section4 .testimonials .jure1 .jure2 .jure3 {
+  height: 92%;
+  border: 0.01rem #efefef solid;
+  border-radius: 0.4rem;
+  width: 65%;
+}
+.section4 .testimonials .jure1 .jure2 .jure3 h3 {
+  color: white;
+}
+.section4 .testimonials .jure1 .jure2 .jure3 span {
+  color: #b0293a;
+}
+.section4 .testimonials .jure1 .jure2 .jure3 p {
+  color: white;
+}
+.section4 .testimonials .jure1 .jure2:last-of-type {
+  flex-direction: row-reverse;
+}
+
+@media (min-width: 500px) and (max-width: 1040px) {
+  .section4 {
+    height: 45rem;
+  }
+  .section4 .testimonials {
+    height: 85%;
+  }
+  .section4 .testimonials .jure1 {
+    flex-direction: column;
+    align-items: center;
+    height: 75%;
+  }
+  .section4 .testimonials .jure1 .jure2 {
+    width: 70%;
+  }
+  .section4 .testimonials .jure1 .jure2 img {
+    width: 33%;
+  }
+}
+@media (min-width: 376px) and (max-width: 499px) {
+  .section4 {
+    height: 55rem;
+    margin-top: 15rem;
+  }
+  .section4 .testimonials {
+    height: 85%;
+  }
+  .section4 .testimonials .titre2 {
+    height: 10%;
+  }
+  .section4 .testimonials .jure1 {
+    flex-direction: column;
+    align-items: center;
+    height: 75%;
+  }
+  .section4 .testimonials .jure1 .jure2 {
+    width: 70%;
+  }
+  .section4 .testimonials .jure1 .jure2 img {
+    width: 8.4rem;
+  }
+}
+@media (max-width: 375px) {
+  .section4 {
+    height: 55rem;
+    margin-top: 15rem;
+  }
+  .section4 .testimonials {
+    height: 85%;
+  }
+  .section4 .testimonials .titre2 {
+    height: 10%;
+  }
+  .section4 .testimonials .jure1 {
+    flex-direction: column;
+    align-items: center;
+    height: 75%;
+  }
+  .section4 .testimonials .jure1 .jure2 {
+    width: 70%;
+  }
+  .section4 .testimonials .jure1 .jure2 img {
+    height: 60%;
+    width: 40%;
+  }
+  .section4 .testimonials .jure1 .jure2 .jure3 {
+    width: 50%;
+  }
+}
+.section5 {
+  background-image: url(../images/main_bg.jpg);
+  height: 35rem;
+  display: flex;
+  align-items: center;
+}
+.section5 .elamigo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section5 .elamigo .titre2 {
+  margin-bottom: 3.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  height: 10%;
+  margin: 2rem;
+}
+.section5 .elamigo .titre2 h1 {
+  color: black;
+  font-family: "Courgette", cursive;
+  margin: 0;
+}
+.section5 .elamigo .titre2 h1 span {
+  color: #b0293a;
+}
+.section5 .elamigo .infos {
+  background-color: #b0293a;
+  color: white;
+  border-radius: 0.4rem;
+  text-align: center;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section5 .elamigo .infos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+}
+.section5 .elamigo .infos div i {
+  font-size: 2rem;
+}
+.section5 .elamigo .infos div p {
+  width: 75%;
+  margin: 0;
+  font-size: 1.2rem;
+  border-bottom: 0.1rem white solid;
+  padding: 0.2rem;
+}
+.section5 .elamigo .infos div p:nth-of-type(2) {
+  width: 15rem;
+}
+
+.section6 {
+  background-color: black;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/footer_background.jpg);
+  background-position-x: -75%;
+  position: relative;
+}
+.section6 .footerbg2 {
+  background-image: url(../images/footer_bottom_decoration_img.png);
+  width: 100%;
+  height: 0.8rem;
+  position: absolute;
+  top: 0;
+}
+.section6 .tags {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  height: 75%;
+}
+.section6 .tags .facebook {
+  width: 33%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 82%;
+}
+.section6 .tags .facebook h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.section6 .tags .facebook p {
+  opacity: 75%;
+  width: 95%;
+}
+.section6 .tags .facebook div {
+  display: flex;
+  width: 50%;
+}
+.section6 .tags .facebook div i {
+  font-size: 1.8rem;
+  margin-right: 0.8rem;
+}
+.section6 .tags .instagram {
+  height: 90%;
+  color: white;
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section6 .tags .instagram h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.section6 .tags .instagram div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section6 .tags .instagram div img {
+  margin: 0.4rem;
+}
+.section6 .tags .tagpop {
+  height: 92%;
+  color: white;
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section6 .tags .tagpop h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.section6 .tags .tagpop div {
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.section6 .tags .tagpop div span {
+  background-color: #b0293a;
+  padding-top: 0.6rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  border-radius: 1.5rem;
+  height: 3rem;
+  border: 0.1rem white solid;
+}
+
+@media (min-width: 640px) and (max-width: 1040px) {
+  .section6 {
+    height: 45rem;
+  }
+  .section6 .tags {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+  }
+  .section6 .tags .facebook {
+    width: 100%;
+    border-bottom: 0.01rem white solid;
+  }
+  .section6 .tags .instagram {
+    width: 100%;
+    border-bottom: 0.01rem white solid;
+  }
+  .section6 .tags .tagpop {
+    width: 100%;
+    border-bottom: 0.01rem white solid;
+  }
+}
+@media (max-width: 639px) {
+  .section6 {
+    height: 55rem;
+  }
+  .section6 .tags {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+  }
+  .section6 .tags .facebook {
+    width: 100%;
+    border-bottom: 0.01rem white solid;
+  }
+  .section6 .tags .instagram {
+    width: 100%;
+    border-bottom: 0.01rem white solid;
+  }
+  .section6 .tags .tagpop {
+    width: 100%;
+    height: 70%;
+    border-bottom: 0.01rem white solid;
+  }
+}
+.section7 {
+  height: 6rem;
+  background-color: #b0293a;
 }
 
 /*# sourceMappingURL=app.css.map */
