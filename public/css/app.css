@@ -16056,7 +16056,7 @@ header {
   background-size: cover;
   background-position-y: 45%;
   background-position-x: 10%;
-  height: 40rem;
+  height: 36rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16066,7 +16066,7 @@ header {
 header .footerbg {
   background-image: url(../images/footer_bottom_decoration_img.png);
   width: 100%;
-  height: 1rem;
+  height: 0.7rem;
   transform: rotate(180deg);
   position: absolute;
   bottom: 0;
@@ -16077,8 +16077,9 @@ header nav {
   justify-content: space-between;
   z-index: 8;
   position: fixed;
-  top: 2rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));
+  align-items: center;
+  top: 0.2rem;
+  background: linear-gradient(rgba(72, 66, 69, 0.2), rgba(72, 66, 69, 0.2));
 }
 header nav ul {
   display: flex;
@@ -16089,6 +16090,7 @@ header nav ul {
   margin: 0;
   border-top: 1px white solid;
   border-bottom: 1px white solid;
+  height: 4rem;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -16106,7 +16108,7 @@ header nav img {
   width: 5rem;
 }
 header .divhdr1 {
-  height: 60%;
+  height: 70%;
 }
 header .divhdr1 .divhdr2 {
   display: flex;
@@ -16164,6 +16166,7 @@ header .divhdr1 .divhdr3 .divhdr4 button {
 header .divhdr1 .divhdr3 .divhdr4 button:hover {
   background-color: #b0293a;
   border: #b0293a 0.002rem solid;
+  color: white;
 }
 
 @media (max-width: 639px) {
@@ -16285,6 +16288,31 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
 }
 .section1 .menu .ourMenuList .ourMenu .display {
   position: relative;
+}
+.section1 .menu .ourMenuList .ourMenu .display .hidden {
+  display: none !important;
+}
+.section1 .menu .ourMenuList .ourMenu .display .attente {
+  height: 20rem;
+  width: 50%;
+  background: url(../images/main_bg.jpg);
+  margin-left: 16.5%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.1rem #b0293a solid;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  position: absolute;
+}
+.section1 .menu .ourMenuList .ourMenu .display .attente h1 {
+  margin-bottom: 0.4rem;
+}
+.section1 .menu .ourMenuList .ourMenu .display .attente p {
+  width: 80%;
+  font-family: "Courgette", cursive;
+  font-size: 1.5rem;
 }
 .section1 .menu .ourMenuList .ourMenu .display .flex {
   display: flex;
@@ -16544,7 +16572,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
 }
 .section3 {
   background-image: url(../images/main_bg.jpg);
-  height: 75rem;
+  height: 78rem;
   display: flex;
   align-items: center;
 }
@@ -16555,7 +16583,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   align-items: center;
   text-align: center;
   background-color: white;
-  height: 65rem;
+  height: 72rem;
   position: relative;
 }
 .section3 .contact .sidebl {
@@ -16580,7 +16608,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
 }
 .section3 .contact .titre2 {
   margin-bottom: 3.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .section3 .contact .titre2 h1 {
   color: black;
@@ -16599,7 +16627,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   align-items: center;
   background-image: url(../images/book_table_bg.jpg);
   border-radius: 1.5rem;
-  height: 30rem;
+  height: 28rem;
 }
 .section3 .contact .form p {
   color: white;
@@ -16615,6 +16643,10 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   border-radius: 1rem;
   padding: 0.5rem;
   color: white;
+}
+.section3 .contact .form .redbtn:hover {
+  background-color: white;
+  color: #b0293a;
 }
 .section3 .contact .form form {
   display: flex;
@@ -16660,6 +16692,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 0.5rem;
 }
 .section3 .contact .form form div .dropdown .dropdown-content a {
   color: black;
@@ -16742,6 +16775,10 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   border-radius: 1rem;
   padding: 0.5rem;
   color: white;
+}
+.section3 .contact button:hover {
+  background-color: white;
+  color: #b0293a;
 }
 
 @media (max-width: 770px) {
