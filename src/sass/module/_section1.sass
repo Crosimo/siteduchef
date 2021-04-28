@@ -35,8 +35,9 @@
             justify-content: center
             flex-direction: column
             text-align: center
-            width: 55%
-            height: 25rem
+            width: 58%
+            height: 27rem
+            align-items: center
 
             h1
                 font-family: $font
@@ -46,11 +47,17 @@
             p
                 justify-content: center
                 margin-top: 3rem
+                width: 80%
+            img
+                width: 100%
+            
         .ourMenuList
             display: flex
             flex-direction: column
             text-align: center
             justify-content: center
+            .titre
+
             h1
                 font-family: $font
                 margin: 0
@@ -58,8 +65,7 @@
                 span
                     color: $red
             img
-                
-                margin-bottom: 1rem
+                width: 100%
                 
             .ourMenu
                 display: flex
@@ -88,11 +94,11 @@
                     .hidden
                         display: none !important
                     .attente
-                        height: 20rem
-                        width: 50%
+                        height: max-content
+                        width: 55%
                         background: url(../images/main_bg.jpg)
                         margin-left: 16.5%
-                        top: 10%
+                        top: 5%
                         display: flex
                         flex-direction: column
                         align-items: center
@@ -108,6 +114,7 @@
                             width: 80%
                             font-family: $font
                             font-size: 1.5rem
+                            height: max-content
                     .flex
                         display: flex
                         
@@ -205,10 +212,13 @@
 @media (min-width: 640px) and (max-width: 1239px)
 
     .section1
-        height: 205rem
+        height: 215rem
         .menu
-            height: 185rem
+            height: 198rem
             justify-content: space-evenly
+            .ourStory
+                height: 42rem
+                margin-top: 1rem
             .ourMenuList
                 height: 80%
                 .ourMenu
@@ -234,10 +244,13 @@
 @media (max-width: 639px)
 
      .section1
-        height: 205rem
+        height: 212rem
         .menu
-            height: 195rem
+            height: 205rem
             justify-content: space-evenly
+            .ourStory
+                height: 48rem
+                
             .ourMenuList
                 height: 75%
                 .ourMenu

@@ -72,6 +72,7 @@
                 justify-content: space-evenly
                 height: 16rem
                 
+                
                 div
                     display: flex
                     flex-direction: column
@@ -82,10 +83,11 @@
                         border-radius: 1rem
                         padding: 0.3rem
                         border: none
+                        margin: 0.1rem
                     .dropdown
                         position: relative
                         display: inline-block
-                        
+                        margin: 0.1rem
                         height: 2rem
 
                         .dropbtn
@@ -99,6 +101,7 @@
                             display: flex
                             justify-content: space-between
                             align-items: center
+                            
                             
                             i
                                 position: relative
@@ -205,11 +208,40 @@
 // mediaqueries
 
 
+@media (min-width: 640px) and ( max-width: 769px  )
 
+     .section3
+        
+        height: 120rem
+    
+        .contact
+            height: 110rem
+            .elem1
+                flex-direction: column
+                height: 50rem
+                .elem2
+                    height: 80%
+                    .textImg
+                        p
+                            position: relative 
+                            bottom: 1.5rem
+                            
+                    div:last-of-type
+                        width: 100%
+                        p 
+                            margin-top: 2rem
+                            width: 100%
 
 @media (max-width: 770px)
+.section3
+    .contact
+        button
+            width: 8rem
     .form
         flex-direction: row
+        .redbtn
+            width: 8rem !important
+           
         form
             
             div
@@ -219,8 +251,8 @@
             .dropdown
                 .dropbtn
                     width: 8rem
-        .redbtn
-            
+        
+                
             
 @media (max-width: 490px)
     .section3
@@ -243,7 +275,7 @@
                         p 
                             margin-top: 2rem
                             width: 100%
-                            
+                         
                 
 
 

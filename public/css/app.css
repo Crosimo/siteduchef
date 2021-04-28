@@ -16175,6 +16175,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   }
   html header nav ul {
     flex-direction: column;
+    height: 100%;
   }
   html .divhdr1 .divhdr3 .divhdr4 p {
     width: 100%;
@@ -16186,9 +16187,11 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   }
   html header nav ul {
     flex-direction: column;
+    height: 100%;
   }
   html .divhdr1 .divhdr3 .divhdr4 p {
     width: 100%;
+    font-size: 1.8rem;
   }
 }
 .section1 {
@@ -16231,8 +16234,9 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  width: 55%;
-  height: 25rem;
+  width: 58%;
+  height: 27rem;
+  align-items: center;
 }
 .section1 .menu .ourStory h1 {
   font-family: "Courgette", cursive;
@@ -16244,6 +16248,10 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
 .section1 .menu .ourStory p {
   justify-content: center;
   margin-top: 3rem;
+  width: 80%;
+}
+.section1 .menu .ourStory img {
+  width: 100%;
 }
 .section1 .menu .ourMenuList {
   display: flex;
@@ -16259,7 +16267,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   color: #b0293a;
 }
 .section1 .menu .ourMenuList img {
-  margin-bottom: 1rem;
+  width: 100%;
 }
 .section1 .menu .ourMenuList .ourMenu {
   display: flex;
@@ -16293,11 +16301,11 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   display: none !important;
 }
 .section1 .menu .ourMenuList .ourMenu .display .attente {
-  height: 20rem;
-  width: 50%;
+  height: max-content;
+  width: 55%;
   background: url(../images/main_bg.jpg);
   margin-left: 16.5%;
-  top: 10%;
+  top: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16313,6 +16321,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   width: 80%;
   font-family: "Courgette", cursive;
   font-size: 1.5rem;
+  height: max-content;
 }
 .section1 .menu .ourMenuList .ourMenu .display .flex {
   display: flex;
@@ -16404,11 +16413,15 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
 }
 @media (min-width: 640px) and (max-width: 1239px) {
   .section1 {
-    height: 205rem;
+    height: 215rem;
   }
   .section1 .menu {
-    height: 185rem;
+    height: 198rem;
     justify-content: space-evenly;
+  }
+  .section1 .menu .ourStory {
+    height: 42rem;
+    margin-top: 1rem;
   }
   .section1 .menu .ourMenuList {
     height: 80%;
@@ -16441,11 +16454,14 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
 }
 @media (max-width: 639px) {
   .section1 {
-    height: 205rem;
+    height: 212rem;
   }
   .section1 .menu {
-    height: 195rem;
+    height: 205rem;
     justify-content: space-evenly;
+  }
+  .section1 .menu .ourStory {
+    height: 48rem;
   }
   .section1 .menu .ourMenuList {
     height: 75%;
@@ -16497,7 +16513,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   color: #b0293a;
 }
 .section2 .titre2 img {
-  width: 40%;
+  width: 100%;
   opacity: 90%;
 }
 .section2 .lesChefs {
@@ -16555,10 +16571,10 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
 
 @media (max-width: 640px) {
   .section2 {
-    height: 145rem;
+    height: 136rem;
   }
   .section2 .titre2 {
-    height: 10%;
+    height: 5%;
   }
   .section2 .lesChefs {
     flex-direction: column;
@@ -16567,7 +16583,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
     width: 100%;
   }
   .section2 .lesChefs div img {
-    width: 35%;
+    width: 42%;
   }
 }
 .section3 {
@@ -16664,10 +16680,12 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   border-radius: 1rem;
   padding: 0.3rem;
   border: none;
+  margin: 0.1rem;
 }
 .section3 .contact .form form div .dropdown {
   position: relative;
   display: inline-block;
+  margin: 0.1rem;
   height: 2rem;
 }
 .section3 .contact .form form div .dropdown .dropbtn {
@@ -16781,20 +16799,51 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   color: #b0293a;
 }
 
-@media (max-width: 770px) {
-  .form {
-    flex-direction: row;
+@media (min-width: 640px) and (max-width: 769px) {
+  .section3 {
+    height: 120rem;
   }
-  .form form {
+  .section3 .contact {
+    height: 110rem;
+  }
+  .section3 .contact .elem1 {
+    flex-direction: column;
+    height: 50rem;
+  }
+  .section3 .contact .elem1 .elem2 {
+    height: 80%;
+  }
+  .section3 .contact .elem1 .elem2 .textImg p {
+    position: relative;
+    bottom: 1.5rem;
+  }
+  .section3 .contact .elem1 .elem2 div:last-of-type {
     width: 100%;
   }
-  .form form input {
-    width: 8rem;
-  }
-  .form form .dropdown .dropbtn {
-    width: 8rem;
+  .section3 .contact .elem1 .elem2 div:last-of-type p {
+    margin-top: 2rem;
+    width: 100%;
   }
 }
+.section3 .contact button {
+  width: 8rem;
+}
+.section3 .form {
+  flex-direction: row;
+}
+.section3 .form .redbtn {
+  width: 8rem !important;
+}
+.section3 .form form {
+  width: 100%;
+}
+.section3 .form form input {
+  width: 8rem;
+}
+.section3 .form form .dropdown .dropbtn {
+  width: 8rem;
+}
+
 @media (max-width: 490px) {
   .section3 {
     margin-top: 10rem;
@@ -16868,6 +16917,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   border: 0.01rem #efefef solid;
   border-radius: 0.4rem;
   width: 65%;
+  padding: 0.4rem;
 }
 .section4 .testimonials .jure1 .jure2 .jure3 h3 {
   color: white;
@@ -16882,7 +16932,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   flex-direction: row-reverse;
 }
 
-@media (min-width: 500px) and (max-width: 1040px) {
+@media (min-width: 771px) and (max-width: 1040px) {
   .section4 {
     height: 45rem;
   }
@@ -16901,6 +16951,25 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
     width: 33%;
   }
 }
+.section4 {
+  height: 45rem;
+}
+.section4 .testimonials {
+  height: 85%;
+}
+.section4 .testimonials .jure1 {
+  flex-direction: column;
+  align-items: center;
+  height: 75%;
+}
+.section4 .testimonials .jure1 .jure2 {
+  width: 75%;
+}
+.section4 .testimonials .jure1 .jure2 img {
+  width: 11rem;
+  margin: 0.35rem;
+}
+
 @media (min-width: 376px) and (max-width: 499px) {
   .section4 {
     height: 55rem;
@@ -16918,7 +16987,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
     height: 75%;
   }
   .section4 .testimonials .jure1 .jure2 {
-    width: 70%;
+    width: 75%;
   }
   .section4 .testimonials .jure1 .jure2 img {
     width: 8.4rem;
@@ -16941,7 +17010,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
     height: 75%;
   }
   .section4 .testimonials .jure1 .jure2 {
-    width: 70%;
+    width: 75%;
   }
   .section4 .testimonials .jure1 .jure2 img {
     height: 60%;
@@ -17125,6 +17194,9 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
     width: 100%;
     border-bottom: 0.01rem white solid;
   }
+  .section6 .tags .instagram div {
+    justify-content: center;
+  }
   .section6 .tags .tagpop {
     width: 100%;
     border-bottom: 0.01rem white solid;
@@ -17147,10 +17219,28 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
     width: 100%;
     border-bottom: 0.01rem white solid;
   }
+  .section6 .tags .instagram div {
+    justify-content: center;
+  }
   .section6 .tags .tagpop {
     width: 100%;
-    height: 70%;
+    height: 18rem;
     border-bottom: 0.01rem white solid;
+  }
+  .section6 .tags .tagpop div {
+    height: 90%;
+    padding: 0.5rem;
+  }
+  .section6 .tags .tagpop span {
+    margin: 0.2rem;
+  }
+}
+@media (min-width: 1141px) {
+  .section6 .tags .tagpop {
+    width: 30%;
+  }
+  .section6 .tags .tagpop div {
+    width: 100%;
   }
 }
 .section7 {
