@@ -16304,7 +16304,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   height: max-content;
   width: 55%;
   background: url(../images/main_bg.jpg);
-  margin-left: 16.5%;
+  margin-left: 13.5%;
   top: 5%;
   display: flex;
   flex-direction: column;
@@ -16681,7 +16681,7 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
   padding: 0.3rem;
   border: none;
   margin: 0.05rem;
-  width: 12rem;
+  width: 8.5rem;
 }
 .section3 .contact .form form div .dropdown {
   position: relative;
