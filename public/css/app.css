@@ -16870,6 +16870,21 @@ header .divhdr1 .divhdr3 .divhdr4 button:hover {
     margin-top: 2rem;
     width: 100%;
   }
+  .section3 .contact .form {
+    width: 90%;
+  }
+  .section3 .contact .form .redbtn {
+    width: 8rem !important;
+  }
+  .section3 .contact .form form {
+    width: 100%;
+  }
+  .section3 .contact .form form input {
+    width: 8rem;
+  }
+  .section3 .contact .form form .dropdown .dropbtn {
+    width: 8rem;
+  }
 }
 .section4 {
   background-image: url(../images/testimonials_background.jpg);
